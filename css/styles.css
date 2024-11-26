@@ -145,40 +145,84 @@ img {
 }
 /*Section one*/
 .one {
-  padding: 188px 0;
+  padding: 72px 0;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .one {
+    padding: 112px 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .one {
+    padding: 188px 0;
+  }
+}
+
 .one {
   background-color: #2e2f42;
-}
-.one {
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/peopleoffice.jpg);
-  max-width: 1440px;
+  max-width: 320px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+@media screen and (min-width: 768px) {
+  .one {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .one {
+    min-width: 1440px;
+  }
+}
+
 .section-one {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .section-one {
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-one {
+  }
+}
 
 .one-text {
-  font-size: 56px;
   font-weight: 700;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #ffffff;
-  max-width: 496px;
-  margin-bottom: 48px;
+  color: #fff;
+  max-width: 216px;
+  margin-bottom: 72px;
+}
+@media screen and (min-width: 768px) {
+  .one-text {
+    font-size: 56px;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .one-text {
+    margin-bottom: 48px;
+  }
 }
 .button {
   display: block;
@@ -202,9 +246,11 @@ img {
   cursor: pointer;
   background-color: #4d5ae5;
 }
-.button:hover,
-.button:focus {
-  background-color: #404bbf;
+@media screen and (min-width: 1158px) {
+  .button:hover,
+  .button:focus {
+    background-color: #404bbf;
+  }
 }
 /* Section two */
 
@@ -440,9 +486,7 @@ img {
   display: flex;
   margin-bottom: 16px;
 }
-.link-footer {
-  display: inline-block;
-}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -452,6 +496,9 @@ img {
   text-align: left;
   color: #4d5ae5;
   text-transform: uppercase;
+}
+.link-footer {
+  display: inline-block;
 }
 .link-footer {
   color: #f4f4fd;
