@@ -160,7 +160,7 @@ img {
     position: relative;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .nav-text:hover,
   .nav-text:focus {
     color: #404bbf;
@@ -228,7 +228,7 @@ img {
     display: block;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 768px) {
   .address-mail:hover,
   .address-mail:focus {
     color: #404bbf;
@@ -870,7 +870,7 @@ img {
 .subscribe-email {
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding-left: 16px;
@@ -879,6 +879,11 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .subscribe-email {
+    width: 264px;
+  }
 }
 .subscribe-email::placeholder {
   color: #ffffff;
@@ -1001,7 +1006,7 @@ img {
   }
 }
 @media screen and (min-width: 1158px) {
-  ..modal-icon-hover {
+  .modal-icon-hover {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -1189,17 +1194,57 @@ input[type="checkbox"]:checked
 .mobile-menu-nav {
   margin-bottom: auto;
 }
-.mobile-menu-nav-link {
-  /* margin-bottom: 40px; */
-}
 
+.mobile-menu-list {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.mobile-menu-nav-link {
+  display: flex;
+  gap: 40px;
+}
+.mobile-menu-nav-text {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+.mobile-menu-nav-text:hover,
+.mobile-menu-nav-text:focus {
+  color: #404bbf;
+}
+.mobile-menu-address-link:hover,
+.mobile-menu-address-link:focus {
+  color: #4d5ae5;
+}
 .mobile-menu-address {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 .mobile-menu-address-list {
+  /* display: flex;
+  flex-direction: column;
+  gap: 24px; */
 }
 .mobile-menu-address-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
-.social-link-ul.mobile-menu-social {
-  justify-content: space-between;
+.social-link-ul {
+}
+.mobile-menu-social {
   gap: 40px;
+}
+.social-link-li {
+}
+.social-link {
+}
+.social-icons {
 }
